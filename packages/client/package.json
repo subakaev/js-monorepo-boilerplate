@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint",
     "test": "jest",
-    "dev": "webpack-dev-server --mode development --config webpack.config.dev.babel.js --open"
+    "dev": "webpack-dev-server --mode development --config webpack.config.dev.babel.js --open",
+    "build": "webpack --config webpack.config.prod.babel.js"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
