@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "name": "js-monorepo-boilerplate",
+  "version": "1.0.0",
+  "repository": "https://github.com/subakaev/js-monorepo-boilerplate.git",
+  "author": "Sergey Bakaev <bakaev@yandex.ru>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ]
+}
