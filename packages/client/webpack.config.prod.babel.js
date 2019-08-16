@@ -13,6 +13,7 @@ import TerserPlugin from 'terser-webpack-plugin';
 import autoprefixer from 'autoprefixer';
 
 module.exports = {
+  mode: 'production',
   devtool: 'source-map',
   entry: {
     main: [
@@ -88,6 +89,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new CleanWebpackPlugin({ verbose: true }),
     new webpack.ProvidePlugin({
       // $: 'jquery',
       // jQuery: 'jquery',
@@ -101,7 +103,6 @@ module.exports = {
       filename: '[name].js.map',
       // exclude: ['bundle.js'],
     }),
-    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
