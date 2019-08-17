@@ -12,7 +12,21 @@
     "build": "lerna run build",
     "lint": "lerna run lint"
   },
+  "lint-staged": {
+    "*.{js, jsx}": [
+      "node_modules/.bin/eslint --max-warnings=0",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint-staged"
+    }
+  },
   "devDependencies": {
-    "lerna": "^3.16.4"
+    "husky": "^3.0.4",
+    "lerna": "^3.16.4",
+    "lint-staged": "^9.2.3"
   }
 }
