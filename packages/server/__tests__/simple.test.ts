@@ -1,6 +1,6 @@
 import request from 'supertest';
 
-import getApp from '../src/index';
+import getApp from '../src/app';
 
 test('testing', async () => {
   const server = getApp();
