@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint",
+    "lint": "eslint .",
     "test": "jest",
     "dev": "webpack-dev-server --mode development --config webpack.config.dev.babel.js --open",
     "build": "webpack --config webpack.config.prod.babel.js"

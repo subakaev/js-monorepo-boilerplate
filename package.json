@@ -9,7 +9,8 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "lint": "lerna run lint"
   },
   "devDependencies": {
     "lerna": "^3.16.4"

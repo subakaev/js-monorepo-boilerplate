@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "lint": "eslint .",
     "dev": "nodemon --exec ts-node ./src/index.ts",
     "build": "rm -rf dist && tsc",
     "test": "jest"
