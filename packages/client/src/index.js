@@ -3,6 +3,4 @@ import { render } from 'react-dom';
 
 const App = () => <h1>Hello from React JS!</h1>;
 
-const a = '';
-
 render(<App />, document.getElementById('root'));
