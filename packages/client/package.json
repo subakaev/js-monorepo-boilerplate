@@ -7,7 +7,15 @@
     "lint": "eslint .",
     "test": "jest",
     "dev": "webpack-dev-server --mode development --config webpack.config.dev.babel.js --open",
-    "build": "webpack --config webpack.config.prod.babel.js"
+    "build": "webpack --config webpack.config.prod.babel.js",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js, jsx}": [
+      "node_modules/.bin/eslint --max-warnings=0",
+      "pretty-quick --staged",
+      "git add"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -25,19 +33,24 @@
     "css-loader": "^3.2.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^22.15.1",
     "eslint-plugin-react": "^7.14.3",
     "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^3.0.4",
     "imagemin-webpack-plugin": "^2.4.2",
     "img-loader": "^3.0.1",
     "jest": "^24.9.0",
+    "lint-staged": "^9.2.3",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
     "react-hot-loader": "^4.12.11",
     "sass-loader": "^7.2.0",
     "style-loader": "^1.0.0",
