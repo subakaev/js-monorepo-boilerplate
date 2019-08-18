@@ -7,7 +7,8 @@
     "lint": "eslint .",
     "test": "jest",
     "dev": "webpack-dev-server --mode development --config webpack.config.dev.babel.js --open",
-    "build": "webpack --config webpack.config.prod.babel.js"
+    "build": "webpack --config webpack.config.prod.babel.js",
+    "lint-staged": "lint-staged"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
